@@ -6,11 +6,11 @@
 
 ## English CentOS 7 installation document below:
 
-###Secure SSH with Google Authenticator Two-Factor Authentication on CentOS 7
+### Secure SSH with Google Authenticator Two-Factor Authentication on CentOS 7
 
 > SSH access is always critical and you might want to find ways to improve the security of your SSH access. In this article we will see how we can secure SSH with simple two factor authentication by using Google Authenticator. Before using it you have to integrate the SSH daemon on your server with Google Authenticator one time password protocol TOTP and another restriction is that you must have your android phone with you all the time or at least the time you want SSH access. This tutorials is written for CentOS 7.
 
-First of all we will install the open source Google Authenticator PAM module by executing the following command on the shell.
+### First of all we will install the open source Google Authenticator PAM module by executing the following command on the shell.
 
  ```
  yum install google-authenticator 
@@ -28,12 +28,13 @@ The next step is to change some files which we will start by first changing /etc
  auth required pam_google_authenticator.so 
  ```
  
- Change the next file which is /etc/ssh/sshd_config. Add the following line in the file and if its already placed then change the parameter to "yes":
+###  Change the next file which is /etc/ssh/sshd_config. Add the following line in the file and if its already placed then change the parameter to "yes":
 ```
  ChallengeResponseAuthentication yes 
 ```
  
- Now restart the service of ssh by the following command:
+ ### Now restart the service of ssh by the following command:
+ 
  ```
  service sshd restart 
  ```
@@ -50,11 +51,11 @@ So we have successfully configured SSH authentication based on Google Authentica
 
 如果提示找不到这个包：
 
-I can't find the package in the standard or EPEL Centos 7 repo. please advise...
+### I can't find the package in the standard or EPEL Centos 7 repo. please advise...
 
 需要翻墙或者VPN才能下载：
 
-Need to download VPN or over the wall:
+### Need to download VPN or over the wall:
 
 ```
  wget https://google-authenticator.googlecode.com/files/libpam-google-authenticator-1.0-source.tar.bz2 
