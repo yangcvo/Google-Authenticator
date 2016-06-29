@@ -2,6 +2,8 @@
 
 ## chinese [Centos.7 中文安装](http://blog.yangcvo.me/2016/06/29/安全的SSH与CentOS的7谷歌身份验证双因素身份验证/)
 
+## centos 6.5 install document below: [Centos.6.5 install ](http://www.shayanderson.com/linux/install-google-authenticator-for-2-step-verification-on-centos-6-5.htm)
+
 ## English CentOS 7 installation document below:
 
 ###Secure SSH with Google Authenticator Two-Factor Authentication on CentOS 7
