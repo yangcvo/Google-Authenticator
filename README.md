@@ -69,7 +69,8 @@ Here I have to download the installation package, you can download the compiler 
 
 ### matters needing attention
 
-> 1 Selinux: need to be set to disabled
+```
+1 Selinux: need to be set to disabled
 2 can be used with the RSA public key authentication, but only difference in the computer with the key RSA only, if not the words will be used.
 3 with a ".Google_authenticator" can be used in Taiwan don't Server, so security must pay attention to.
 4 commercial OTP system is generally C/S network version of the way, there is a unified Server Authentication, in order to ensure high availability,
@@ -81,3 +82,4 @@ Time requirements are very strict, to maintain synchronization with the NTP serv
 PAM authentication can be added to the "/etc/pam.d/su".
 8 when the server enables PAM authentication, all users are required to enter the TOTP password,
 Therefore, each user needs to produce a ".Google_authenticator" file in its own directory.
+```
