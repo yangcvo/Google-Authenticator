@@ -16,7 +16,7 @@
  yum install google-authenticator 
  ```
  This command will install Google authenticator on you Centos 7 Server. The next step is to get the verification code. It's a very simple command to get the verification code and scratch codes by just answering simple questions of server which he will ask you. You can do that step by running the following command:
- ```
+ ``` 
  google-authenticator 
  ```
 You will get an output like the following screenshot which is being displayed to help you step by step as this step is very important and crucial. Write down the emergency scratch codes somewhere safe, they can only be used one time each, and they're intended for use if you lose your phone.
